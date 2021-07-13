@@ -1,0 +1,62 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/variants/nodemcu"
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/output/sketch/main.ino.cpp",
+    "Include": "Adafruit_Sensor.h",
+    "Includepath": "/Users/thinkmac/Documents/Arduino/libraries/Adafruit_Unified_Sensor"
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/output/sketch/main.ino.cpp",
+    "Include": "DHT.h",
+    "Includepath": "/Users/thinkmac/Documents/Arduino/libraries/DHT_sensor_library"
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/output/sketch/main.ino.cpp",
+    "Include": "LiquidCrystal_I2C.h",
+    "Includepath": "/Users/thinkmac/Documents/Arduino/libraries/LiquidCrystal_I2C-1.1"
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/output/sketch/main.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/Wire"
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/output/sketch/main.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/Adafruit_Unified_Sensor/Adafruit_Sensor.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/DHT_sensor_library/DHT.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/DHT_sensor_library/DHT_U.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/LiquidCrystal_I2C-1.1/LiquidCrystal_I2C.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/Wire/Wire.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
