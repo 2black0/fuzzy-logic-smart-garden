@@ -31,6 +31,21 @@
   },
   {
     "Sourcefile": "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/output/sketch/main.ino.cpp",
+    "Include": "ESP8266WiFi.h",
+    "Includepath": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src"
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/output/sketch/main.ino.cpp",
+    "Include": "BlynkSimpleEsp8266.h",
+    "Includepath": "/Users/thinkmac/Documents/Arduino/libraries/Blynk/src"
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/output/sketch/main.ino.cpp",
+    "Include": "Fuzzy.h",
+    "Includepath": "/Users/thinkmac/Documents/Arduino/libraries/eFLL"
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/output/sketch/main.ino.cpp",
     "Include": "",
     "Includepath": null
   },
@@ -56,6 +71,156 @@
   },
   {
     "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/Wire/Wire.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/BearSSLHelpers.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/CertStoreBearSSL.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/ESP8266WiFi.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/ESP8266WiFiAP.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/ESP8266WiFiGeneric.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/ESP8266WiFiGratuitous.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/ESP8266WiFiMulti.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/ESP8266WiFiSTA-WPS.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/ESP8266WiFiSTA.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/ESP8266WiFiScan.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/WiFiClient.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/WiFiClientSecureAxTLS.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/WiFiClientSecureBearSSL.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/WiFiServer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/WiFiServerSecureAxTLS.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/WiFiServerSecureBearSSL.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/WiFiUdp.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/Blynk/src/utility/BlynkDebug.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/Blynk/src/utility/BlynkHandlers.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/Blynk/src/utility/BlynkTimer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/Blynk/src/utility/utility.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/eFLL/Fuzzy.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/eFLL/FuzzyComposition.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/eFLL/FuzzyIO.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/eFLL/FuzzyInput.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/eFLL/FuzzyOutput.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/eFLL/FuzzyRule.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/eFLL/FuzzyRuleAntecedent.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/eFLL/FuzzyRuleConsequent.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/Users/thinkmac/Documents/Arduino/libraries/eFLL/FuzzySet.cpp",
     "Include": "",
     "Includepath": null
   }

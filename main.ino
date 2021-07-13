@@ -7,7 +7,7 @@
 #include <LiquidCrystal_I2C.h>
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
-#include <SimpleTimer.h>
+#include <Fuzzy.h>
 
 #define SensorPin A0
 
@@ -16,7 +16,7 @@ char ssid[] = "YourNetworkName"; // ganti wifi ssid
 char pass[] = "YourPassword";    // ganti wifi password
 
 DHT_Unified dht(D4, DHT11);
-SimpleTimer timer;
+BlynkTimer timer;
 
 uint32_t delayMS;
 float temp;
@@ -29,7 +29,7 @@ void setup()
   Serial.begin(9600);
   lcd.begin();
   dht.begin();
-  Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 9600); //
+  Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 9600);
 
   lcd.backlight();
   serial_show(0, "Fuzzy Logic Smart Garden", 0, "", 0, "", 0, "");

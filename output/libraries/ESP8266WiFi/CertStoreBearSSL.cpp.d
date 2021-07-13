@@ -1,5 +1,6 @@
-/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/output/sketch/main.ino.cpp.o: \
- /Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/output/sketch/main.ino.cpp \
+/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/output/libraries/ESP8266WiFi/CertStoreBearSSL.cpp.o: \
+ /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/CertStoreBearSSL.cpp \
+ /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/CertStoreBearSSL.h \
  /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/Arduino.h \
  /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/libc/xtensa-lx106-elf/include/stdlib.h \
  /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/libc/xtensa-lx106-elf/include/machine/ieeefp.h \
@@ -68,60 +69,7 @@
  /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/debug.h \
  /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/variants/nodemcu/pins_arduino.h \
  /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/variants/nodemcu/../generic/common.h \
- /Users/thinkmac/Documents/Arduino/libraries/Adafruit_Unified_Sensor/Adafruit_Sensor.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/Print.h \
- /Users/thinkmac/Documents/Arduino/libraries/DHT_sensor_library/DHT.h \
- /Users/thinkmac/Documents/Arduino/libraries/DHT_sensor_library/DHT_U.h \
- /Users/thinkmac/Documents/Arduino/libraries/LiquidCrystal_I2C-1.1/LiquidCrystal_I2C.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/Wire/Wire.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/ESP8266WiFi.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/include/wl_definitions.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/IPAddress.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/Printable.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/lwip/init.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/lwip/opt.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/lwipopts.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/gluedebug.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/lwip/debug.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/lwip/arch.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/arch/cc.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/lwip-err-t.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/mem.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/glue.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/user_interface.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/os_type.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/ets_sys.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/ipv4_addr.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/lwip/ip_addr.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/lwip/def.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/lwip/ip4_addr.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/lwip/ip6_addr.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/lwip/def.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/queue.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/spi_flash.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/gpio.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/gluedebug.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/ipv4_addr.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/libc/xtensa-lx106-elf/include/limits.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/arch/cc.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/lwip-git-hash.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/libc/xtensa-lx106-elf/include/sys/time.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/lwip2/include/lwip/debug.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/ESP8266WiFiType.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/queue.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/ESP8266WiFiSTA.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/ESP8266WiFiGeneric.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/ESP8266WiFiAP.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/ESP8266WiFiScan.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/WiFiClient.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/Client.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/IPAddress.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/include/slist.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/WiFiServer.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/Server.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/WiFiServerSecure.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/WiFiClientSecure.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/WiFiClientSecureBearSSL.h \
+ /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/BearSSLHelpers.h \
  /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/bearssl/bearssl.h \
  /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/bearssl/bearssl_hash.h \
  /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/bearssl/bearssl_hmac.h \
@@ -135,47 +83,6 @@
  /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/bearssl/bearssl_ssl.h \
  /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/bearssl/bearssl_x509.h \
  /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/bearssl/bearssl_pem.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/BearSSLHelpers.h \
  /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/StackThunk.h \
  /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/Updater.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/CertStoreBearSSL.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/BearSSLHelpers.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/FS.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/WiFiServerSecureBearSSL.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi/src/WiFiClientSecure.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/BlynkSimpleEsp8266.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/version.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/BlynkApiArduino.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/Blynk/BlynkApi.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/Blynk/BlynkConfig.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/Blynk/BlynkDetectDevice.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/Blynk/BlynkDebug.h \
- /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/tools/sdk/include/os_type.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/Blynk/BlynkParam.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/Blynk/BlynkTimer.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/Blynk/BlynkConsole.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/Blynk/BlynkHandlers.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/Blynk/BlynkProtocolDefs.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/Blynk/BlynkProtocol.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/utility/BlynkUtility.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/Adapters/BlynkArduinoClient.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/BlynkWidgets.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/WidgetLED.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/Blynk/BlynkWidgetBase.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/WidgetLCD.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/WidgetTerminal.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/WidgetBridge.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/WidgetTimeInput.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/utility/BlynkDateTime.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/WidgetTable.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/WidgetGPS.h \
- /Users/thinkmac/Documents/Arduino/libraries/Blynk/src/WidgetMap.h \
- /Users/thinkmac/Documents/Arduino/libraries/eFLL/Fuzzy.h \
- /Users/thinkmac/Documents/Arduino/libraries/eFLL/FuzzyInput.h \
- /Users/thinkmac/Documents/Arduino/libraries/eFLL/FuzzyIO.h \
- /Users/thinkmac/Documents/Arduino/libraries/eFLL/FuzzySet.h \
- /Users/thinkmac/Documents/Arduino/libraries/eFLL/FuzzyOutput.h \
- /Users/thinkmac/Documents/Arduino/libraries/eFLL/FuzzyComposition.h \
- /Users/thinkmac/Documents/Arduino/libraries/eFLL/FuzzyRule.h \
- /Users/thinkmac/Documents/Arduino/libraries/eFLL/FuzzyRuleAntecedent.h \
- /Users/thinkmac/Documents/Arduino/libraries/eFLL/FuzzyRuleConsequent.h
+ /Users/thinkmac/Library/Arduino15/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266/FS.h

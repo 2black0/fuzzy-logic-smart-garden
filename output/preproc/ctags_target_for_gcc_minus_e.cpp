@@ -1,18 +1,28 @@
 # 1 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
-# 2 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino" 2
-# 3 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino" 2
-# 4 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino" 2
+// created by 2black0@gmail.com
+// 2021
+
 # 5 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino" 2
+# 6 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino" 2
+# 7 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino" 2
+# 8 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino" 2
+# 9 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino" 2
+# 10 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino" 2
+//#include <SimpleTimer.h>
+# 12 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino" 2
 
 
 
+char auth[] = "YourAuthToken"; // ganti pakai token dari blynk
+char ssid[] = "YourNetworkName"; // ganti wifi ssid
+char pass[] = "YourPassword"; // ganti wifi password
 
+DHT_Unified dht(D4, 11 /**< DHT TYPE 11 */);
+BlynkTimer timer;
 
-DHT_Unified dht(2, 11 /**< DHT TYPE 11 */);
 uint32_t delayMS;
-
 float temp;
-float hum;
+float soil;
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
@@ -21,54 +31,76 @@ void setup()
   Serial.begin(9600);
   lcd.begin();
   dht.begin();
-  sensor_t sensor;
-  delayMS = sensor.min_delay / 1000;
+  Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 9600);
 
   lcd.backlight();
   serial_show(0, "Fuzzy Logic Smart Garden", 0, "", 0, "", 0, "");
   lcd_show("Fuzzy Logic", "Smart Garden", 2500);
+
+  timer.setInterval(2000, send_data);
 }
 
 void loop()
 {
-  temp = read_temp();
-  hum = read_soil();
-
-  serial_show(0, "Temperature: ", 0, String(temp), 0, "°C", 0, "");
-  serial_show(0, "Soil Moisture: ", 0, String(hum), 0, "%", 0, "");
-
-  lcd_show("t:"+String(temp)+"C", "h:"+String(hum)+"%", 100);
-  delay(delayMS);
+  Blynk.run();
+  timer.run();
 }
 
-void serial_show(bool line1, String text1, bool line2, String text2, bool line3, String text3, bool line4, String text4){
-  if(line1){
+void send_data()
+{
+  temp = read_temp();
+  soil = read_soil();
+
+  serial_show(0, "Temperature: ", 0, String(temp), 0, "°C", 0, "");
+  serial_show(0, "Soil Moisture: ", 0, String(soil), 0, "%", 0, "");
+
+  Blynk.virtualWrite(0, temp);
+  Blynk.virtualWrite(1, soil);
+
+  lcd_show("t:" + String(temp) + "C", "h:" + String(soil) + "%", 100);
+}
+
+void serial_show(bool line1, String text1, bool line2, String text2, bool line3, String text3, bool line4, String text4)
+{
+  if (line1)
+  {
     Serial.println(text1);
-  } else {
+  }
+  else
+  {
     Serial.print(text1);
   }
-  if(line2){
+  if (line2)
+  {
     Serial.println(text2);
-  } else {
+  }
+  else
+  {
     Serial.print(text2);
   }
-  if(line3){
+  if (line3)
+  {
     Serial.println(text3);
-  } else {
+  }
+  else
+  {
     Serial.print(text3);
   }
-  if(line4){
+  if (line4)
+  {
     Serial.println(text4);
-  } else {
+  }
+  else
+  {
     Serial.print(text4);
   }
 }
 
 void lcd_show(String text1, String text2, int delay_lcd)
 {
-  lcd.setCursor(0,0);
+  lcd.setCursor(0, 0);
   lcd.print(text1);
-  lcd.setCursor(1,0);
+  lcd.setCursor(1, 0);
   lcd.print(text2);
   delay(delay_lcd);
 }
