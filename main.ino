@@ -58,7 +58,7 @@ void send_data()
   fuzzy->fuzzify();
 
   float pump = fuzzy->defuzzify(1);
-  int pumpS = map(pump, 0, 100, 0, 1023)
+  int pumpS = map(pump, 0, 100, 0, 1023);
   analogWrite(pumpPin, pumpS);
 
   serial_show(0, "Temperature: ", 0, String(temp), 0, "°C", 1, "");

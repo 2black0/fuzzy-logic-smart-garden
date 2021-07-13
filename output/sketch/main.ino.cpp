@@ -11,7 +11,8 @@
 #include <BlynkSimpleEsp8266.h>
 #include <Fuzzy.h>
 
-#define SensorPin A0
+#define soilPin A0
+#define pumpPin 2
 
 char auth[] = "YourAuthToken";   // ganti pakai token dari blynk
 char ssid[] = "YourNetworkName"; // ganti wifi ssid
@@ -27,23 +28,23 @@ float soil;
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-#line 28 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 29 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 void setup();
-#line 44 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 45 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 void loop();
-#line 50 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 51 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 void send_data();
-#line 72 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 75 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 void serial_show(bool line1, String text1, bool line2, String text2, bool line3, String text3, bool line4, String text4);
-#line 108 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 111 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 void lcd_show(String text1, String text2, int delay_lcd);
-#line 117 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 120 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 float read_temp();
-#line 131 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 134 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 float read_soil();
-#line 143 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 147 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 void fuzzy_system();
-#line 28 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 29 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 void setup()
 {
   Serial.begin(9600);
@@ -76,6 +77,8 @@ void send_data()
   fuzzy->fuzzify();
 
   float pump = fuzzy->defuzzify(1);
+  int pumpS = map(pump, 0, 100, 0, 1023);
+  analogWrite(pumpPin, pumpS);
 
   serial_show(0, "Temperature: ", 0, String(temp), 0, "°C", 1, "");
   serial_show(0, "Soil Moisture: ", 0, String(soil), 0, "%", 1, "");
@@ -152,10 +155,11 @@ float read_soil()
   float sensorValue = 0;
   for (int i = 0; i <= 100; i++)
   {
-    sensorValue = sensorValue + analogRead(SensorPin);
+    sensorValue = sensorValue + analogRead(soilPin);
     delay(1);
   }
   sensorValue = sensorValue / 100.0;
+  float sensorValues = map(sensorValue, 0, 1023, 0, 100);
   return sensorValue;
 }
 

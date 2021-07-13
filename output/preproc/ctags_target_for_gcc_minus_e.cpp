@@ -12,6 +12,7 @@
 
 
 
+
 char auth[] = "YourAuthToken"; // ganti pakai token dari blynk
 char ssid[] = "YourNetworkName"; // ganti wifi ssid
 char pass[] = "YourPassword"; // ganti wifi password
@@ -58,6 +59,8 @@ void send_data()
   fuzzy->fuzzify();
 
   float pump = fuzzy->defuzzify(1);
+  int pumpS = map(pump, 0, 100, 0, 1023);
+  analogWrite(2, pumpS);
 
   serial_show(0, "Temperature: ", 0, String(temp), 0, "°C", 1, "");
   serial_show(0, "Soil Moisture: ", 0, String(soil), 0, "%", 1, "");
@@ -138,6 +141,7 @@ float read_soil()
     delay(1);
   }
   sensorValue = sensorValue / 100.0;
+  float sensorValues = map(sensorValue, 0, 1023, 0, 100);
   return sensorValue;
 }
 
