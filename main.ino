@@ -10,7 +10,9 @@
 #include <Fuzzy.h>
 
 #define soilPin A0
-#define pumpPin 4
+#define pumpPin 14
+#define pinMotorIN1 12
+#define pinMotorIN2 13
 
 char auth[] = "YourAuthToken";   // ganti pakai token dari blynk
 char ssid[] = "YourNetworkName"; // ganti wifi ssid
@@ -29,6 +31,12 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 void setup()
 {
   Serial.begin(9600);
+
+  pinMode(pinMotorIN1, OUTPUT);
+  pinMode(pinMotorIN2, OUTPUT);
+  digitalWrite(pinMotorIN1, LOW);
+  digitalWrite(pinMotorIN2, HIGH);
+  
   lcd.begin();
   dht.begin();
   Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 9600);

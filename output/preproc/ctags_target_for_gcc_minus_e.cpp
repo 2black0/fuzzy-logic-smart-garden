@@ -13,6 +13,8 @@
 
 
 
+
+
 char auth[] = "YourAuthToken"; // ganti pakai token dari blynk
 char ssid[] = "YourNetworkName"; // ganti wifi ssid
 char pass[] = "YourPassword"; // ganti wifi password
@@ -30,6 +32,12 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 void setup()
 {
   Serial.begin(9600);
+
+  pinMode(12, 0x01);
+  pinMode(13, 0x01);
+  digitalWrite(12, 0x0);
+  digitalWrite(13, 0x1);
+
   lcd.begin();
   dht.begin();
   Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 9600);
@@ -60,7 +68,7 @@ void send_data()
 
   float pump = fuzzy->defuzzify(1);
   int pumpS = map(pump, 0, 100, 0, 1023);
-  analogWrite(2, pumpS);
+  analogWrite(14, pumpS);
 
   serial_show(0, "Temperature: ", 0, String(temp), 0, "°C", 1, "");
   serial_show(0, "Soil Moisture: ", 0, String(soil), 0, "%", 1, "");

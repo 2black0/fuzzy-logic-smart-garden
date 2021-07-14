@@ -12,7 +12,9 @@
 #include <Fuzzy.h>
 
 #define soilPin A0
-#define pumpPin 2
+#define pumpPin 14
+#define pinMotorIN1 12
+#define pinMotorIN2 13
 
 char auth[] = "YourAuthToken";   // ganti pakai token dari blynk
 char ssid[] = "YourNetworkName"; // ganti wifi ssid
@@ -28,26 +30,32 @@ float soil;
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-#line 29 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 31 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 void setup();
-#line 45 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 53 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 void loop();
-#line 51 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 59 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 void send_data();
-#line 75 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 83 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 void serial_show(bool line1, String text1, bool line2, String text2, bool line3, String text3, bool line4, String text4);
-#line 111 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 119 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 void lcd_show(String text1, String text2, int delay_lcd);
-#line 120 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 128 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 float read_temp();
-#line 134 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 142 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 float read_soil();
-#line 147 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 155 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 void fuzzy_system();
-#line 29 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
+#line 31 "/Users/thinkmac/Documents/GitHub/fuzzy-logic-smart-garden/main.ino"
 void setup()
 {
   Serial.begin(9600);
+
+  pinMode(pinMotorIN1, OUTPUT);
+  pinMode(pinMotorIN2, OUTPUT);
+  digitalWrite(pinMotorIN1, LOW);
+  digitalWrite(pinMotorIN2, HIGH);
+  
   lcd.begin();
   dht.begin();
   Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 9600);
@@ -259,3 +267,4 @@ void fuzzy_system()
   FuzzyRule *fuzzyRule09 = new FuzzyRule(9, ifSoilWetAndTemperatureHot, thenPumpAverage);
   fuzzy->addFuzzyRule(fuzzyRule09);
 }
+
