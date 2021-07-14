@@ -10,7 +10,7 @@
 #include <Fuzzy.h>
 
 #define soilPin A0
-#define pumpPin 2
+#define pumpPin 5
 
 char auth[] = "YourAuthToken";   // ganti pakai token dari blynk
 char ssid[] = "YourNetworkName"; // ganti wifi ssid
